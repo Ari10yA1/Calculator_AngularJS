@@ -5,27 +5,36 @@
   <input type="number" name="num2" placeholder="Enter Number 2" [(ngModel)]="num2">
 
 <br><br>
-<button (click)="add()">Add</button>
-<button (click)="subtract()">Subtract</button>
-<button (click)="multiply()">Multiply</button>
-<button (click)="divide()">Divide</button>
+<button  mat-raised-button  color="primary"  (click)="add()">Add</button>
+<button  mat-raised-button  color="primary"  (click)="subtract()">Subtract</button>
+<button  mat-raised-button  color="primary"  (click)="multiply()">Multiply</button>
+<button  mat-raised-button  color="primary"  (click)="divide()">Divide</button>
 <br>
 <h3>Result : {{result}} </h3>
 
-<hr>
+<mat-divider></mat-divider>
+
 <app-heading2></app-heading2>
 <input type="number" name="fact" placeholder="Enter Number to check factorial of it" [(ngModel)]="fact">
 <br><br>
-<button (click)="factorial()">Check Factorial</button>
+<button  mat-raised-button  color="primary" (click)="factorial()">Check Factorial</button>
 <br>
 <h3>Factorial : {{result2}} </h3>
-<hr>
+
+<mat-divider></mat-divider>
+
 <app-heading3></app-heading3>
 <input type="number" name="fact" placeholder="Enter Number to check Prime Or Not" [(ngModel)]="num4">
 <br><br>
-<button (click)="primeornot()">Check</button>
+<button  mat-raised-button color="primary" (click)="primeornot()">Check</button>
 <br>
 <h3>the number is prime : {{result3}}</h3>
-<hr>
+
+<mat-divider></mat-divider>
+
 </div>
+
+
+
+
 

@@ -8,7 +8,12 @@ import { Heading1Component } from './heading1/heading1.component';
 import { Heading2Component } from './heading2/heading2.component';
 import { Heading3Component } from './heading3/heading3.component';
 import { NewAppComponent } from './new-app/new-app.component';
-import { SomethingComponent } from './something/something.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatDividerModule } from '@angular/material/divider';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,13 +21,18 @@ import { SomethingComponent } from './something/something.component';
     Heading1Component,
     Heading2Component,
     Heading3Component,
-    NewAppComponent,
-    SomethingComponent
+    NewAppComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatInputModule,
+    MatDividerModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
